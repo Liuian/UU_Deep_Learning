@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-30T14:05:26.209257",
+  "timestamp": "2026-05-04T15:18:06.442087",
   "grid_search_config": {
     "seq_length_list": [
       10,
@@ -26,9 +26,9 @@
       "num_sequences": 990,
       "train_size": 792,
       "test_size": 198,
-      "mse_scaled": 0.004831123165786266,
-      "mae_scaled": 0.05228887498378754,
-      "mae_original": 13.229084014892578
+      "mse_scaled": 0.005257956683635712,
+      "mae_scaled": 0.05342462658882141,
+      "mae_original": 13.516432762145996
     },
     {
       "seq_length": 10,
@@ -36,9 +36,9 @@
       "num_sequences": 990,
       "train_size": 792,
       "test_size": 198,
-      "mse_scaled": 0.0004979047807864845,
-      "mae_scaled": 0.016392534598708153,
-      "mae_original": 4.147311210632324
+      "mse_scaled": 0.0003242747043259442,
+      "mae_scaled": 0.014554984867572784,
+      "mae_original": 3.6824111938476562
     },
     {
       "seq_length": 10,
@@ -46,9 +46,9 @@
       "num_sequences": 990,
       "train_size": 792,
       "test_size": 198,
-      "mse_scaled": 0.00021841445413883775,
-      "mae_scaled": 0.010839924216270447,
-      "mae_original": 2.7425010204315186
+      "mse_scaled": 8.055008947849274e-05,
+      "mae_scaled": 0.006409381981939077,
+      "mae_original": 1.6215741634368896
     },
     {
       "seq_length": 10,
@@ -56,9 +56,9 @@
       "num_sequences": 990,
       "train_size": 792,
       "test_size": 198,
-      "mse_scaled": 3.706204006448388e-05,
-      "mae_scaled": 0.00423820735886693,
-      "mae_original": 1.0722668170928955
+      "mse_scaled": 0.00012244118261151016,
+      "mae_scaled": 0.008957693353295326,
+      "mae_original": 2.26629638671875
     },
     {
       "seq_length": 15,
@@ -66,9 +66,9 @@
       "num_sequences": 985,
       "train_size": 788,
       "test_size": 197,
-      "mse_scaled": 0.005471702199429274,
-      "mae_scaled": 0.061685480177402496,
-      "mae_original": 15.606427192687988
+      "mse_scaled": 0.004757871385663748,
+      "mae_scaled": 0.05092333257198334,
+      "mae_original": 12.883602142333984
     },
     {
       "seq_length": 15,
@@ -76,9 +76,9 @@
       "num_sequences": 985,
       "train_size": 788,
       "test_size": 197,
-      "mse_scaled": 0.0015325226122513413,
-      "mae_scaled": 0.028288520872592926,
-      "mae_original": 7.156996250152588
+      "mse_scaled": 0.000476189045002684,
+      "mae_scaled": 0.0156374704092741,
+      "mae_original": 3.9562795162200928
     },
     {
       "seq_length": 15,
@@ -86,9 +86,9 @@
       "num_sequences": 985,
       "train_size": 788,
       "test_size": 197,
-      "mse_scaled": 0.00019619037630036473,
-      "mae_scaled": 0.011337648145854473,
-      "mae_original": 2.868424892425537
+      "mse_scaled": 0.00016915764717850834,
+      "mae_scaled": 0.009665985591709614,
+      "mae_original": 2.4454946517944336
     },
     {
       "seq_length": 15,
@@ -96,9 +96,9 @@
       "num_sequences": 985,
       "train_size": 788,
       "test_size": 197,
-      "mse_scaled": 8.968144538812339e-05,
-      "mae_scaled": 0.007482693064957857,
-      "mae_original": 1.893121600151062
+      "mse_scaled": 8.236469147959724e-05,
+      "mae_scaled": 0.007400694768875837,
+      "mae_original": 1.8723760843276978
     },
     {
       "seq_length": 20,
@@ -106,9 +106,9 @@
       "num_sequences": 980,
       "train_size": 784,
       "test_size": 196,
-      "mse_scaled": 0.0067285276018083096,
-      "mae_scaled": 0.05601360276341438,
-      "mae_original": 14.171441078186035
+      "mse_scaled": 0.005344093311578035,
+      "mae_scaled": 0.05439269170165062,
+      "mae_original": 13.761351585388184
     },
     {
       "seq_length": 20,
@@ -116,9 +116,9 @@
       "num_sequences": 980,
       "train_size": 784,
       "test_size": 196,
-      "mse_scaled": 0.0001226580934599042,
-      "mae_scaled": 0.00873612705618143,
-      "mae_original": 2.210240125656128
+      "mse_scaled": 0.0006005491595715284,
+      "mae_scaled": 0.018890326842665672,
+      "mae_original": 4.779252529144287
     },
     {
       "seq_length": 20,
@@ -126,9 +126,9 @@
       "num_sequences": 980,
       "train_size": 784,
       "test_size": 196,
-      "mse_scaled": 0.00046361767454072833,
-      "mae_scaled": 0.015716420486569405,
-      "mae_original": 3.976254940032959
+      "mse_scaled": 0.00022168291616253555,
+      "mae_scaled": 0.011102371849119663,
+      "mae_original": 2.8089001178741455
     },
     {
       "seq_length": 20,
@@ -136,9 +136,9 @@
       "num_sequences": 980,
       "train_size": 784,
       "test_size": 196,
-      "mse_scaled": 7.984792318893597e-05,
-      "mae_scaled": 0.007347452454268932,
-      "mae_original": 1.8589050769805908
+      "mse_scaled": 0.0005089757032692432,
+      "mae_scaled": 0.013682413846254349,
+      "mae_original": 3.461650848388672
     },
     {
       "seq_length": 25,
@@ -146,9 +146,9 @@
       "num_sequences": 975,
       "train_size": 780,
       "test_size": 195,
-      "mse_scaled": 0.004692108370363712,
-      "mae_scaled": 0.051960960030555725,
-      "mae_original": 13.146122932434082
+      "mse_scaled": 0.005300302989780903,
+      "mae_scaled": 0.05763688310980797,
+      "mae_original": 14.582132339477539
     },
     {
       "seq_length": 25,
@@ -156,9 +156,9 @@
       "num_sequences": 975,
       "train_size": 780,
       "test_size": 195,
-      "mse_scaled": 0.0002328617702005431,
-      "mae_scaled": 0.011427131481468678,
-      "mae_original": 2.891064405441284
+      "mse_scaled": 0.0001006847305689007,
+      "mae_scaled": 0.008227824233472347,
+      "mae_original": 2.0816397666931152
     },
     {
       "seq_length": 25,
@@ -166,9 +166,9 @@
       "num_sequences": 975,
       "train_size": 780,
       "test_size": 195,
-      "mse_scaled": 0.00015198053733911365,
-      "mae_scaled": 0.009721485897898674,
-      "mae_original": 2.459535837173462
+      "mse_scaled": 0.00014076002116780728,
+      "mae_scaled": 0.008411744609475136,
+      "mae_original": 2.12817120552063
     },
     {
       "seq_length": 25,
@@ -176,19 +176,19 @@
       "num_sequences": 975,
       "train_size": 780,
       "test_size": 195,
-      "mse_scaled": 0.0003089829988311976,
-      "mae_scaled": 0.012218146584928036,
-      "mae_original": 3.091190814971924
+      "mse_scaled": 0.00013034671428613365,
+      "mae_scaled": 0.007788871880620718,
+      "mae_original": 1.970584511756897
     }
   ],
   "best_result": {
     "seq_length": 10,
-    "learning_rate": 0.005,
+    "learning_rate": 0.001,
     "num_sequences": 990,
     "train_size": 792,
     "test_size": 198,
-    "mse_scaled": 3.706204006448388e-05,
-    "mae_scaled": 0.00423820735886693,
-    "mae_original": 1.0722668170928955
+    "mse_scaled": 8.055008947849274e-05,
+    "mae_scaled": 0.006409381981939077,
+    "mae_original": 1.6215741634368896
   }
 }

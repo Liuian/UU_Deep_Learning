@@ -15,6 +15,9 @@ HIDDEN_SIZE = 64
 NUM_LAYERS = 2
 EPOCHS = 50
 
+torch.manual_seed(42)
+np.random.seed(42)
+
 # Grid search parameters
 SEQ_LENGTH_LIST = [10, 15, 20, 25]
 LEARNING_RATE_LIST = [0.0001, 0.0005, 0.001, 0.005]
@@ -99,8 +102,14 @@ def train_and_evaluate(seq_length, learning_rate):
     y_test = torch.tensor(y_test)
     
     # Create DataLoader
+    def seed_worker(worker_id):
+        np.random.seed(42)
+
+    g = torch.Generator()
+    g.manual_seed(42)
+
     train_dataset = TensorDataset(X_train, y_train)
-    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
+    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, worker_init_fn=seed_worker, generator=g)
     
     # Create model
     model = TimeSeriesLSTM(input_size=1, hidden_size=HIDDEN_SIZE, num_layers=NUM_LAYERS, output_size=1)
