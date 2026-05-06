@@ -226,7 +226,7 @@ def run_grid_search():
         print(f"    val_mse={val_mse:.6f}, val_mae={val_mae:.6f}\n")
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_filename = f"grid_search_results_{timestamp}.json"
+    output_filename = f"gru_grid_search_results_{timestamp}.json"
     config = {**grid, **fixed_params}
     save_results_to_json(results, config, output_filename)
     print(f"Grid search finished. Results saved to {output_filename}")
