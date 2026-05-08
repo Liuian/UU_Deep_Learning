@@ -209,9 +209,12 @@ print(f"Prediction range: [{predictions.min():.4f}, {predictions.max():.4f}]")
 
 x_history = np.arange(-N_HISTORY, 0)
 x_future  = np.arange(0, N_PREDICT)
+xtest_data = scipy.io.loadmat("Xtest.mat")
+xtest_raw  = xtest_data['Xtest'].astype(np.float32).flatten()
 
 fig, ax = plt.subplots(figsize=(14, 4))
 ax.plot(x_history, history_raw, label='Xtrain (last 100 pts)', color='steelblue')
+ax.plot(x_future,  xtest_raw,   label='Xtest',                 color='green')
 ax.plot(x_future,  predictions, label='Recursive Forecast (200 pts)',
         color='tomato', linestyle='--')
 ax.axvline(x=0, color='gray', linestyle=':', linewidth=1.5, label='Forecast Start')
