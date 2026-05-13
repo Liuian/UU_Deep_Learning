@@ -1,0 +1,194 @@
+{
+  "timestamp": "2026-05-04T15:09:46.554433",
+  "grid_search_config": {
+    "seq_length_list": [
+      10,
+      15,
+      20,
+      25
+    ],
+    "learning_rate_list": [
+      0.0001,
+      0.0005,
+      0.001,
+      0.005
+    ],
+    "batch_size": 32,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "epochs": 50,
+    "total_combinations": 16
+  },
+  "results": [
+    {
+      "seq_length": 10,
+      "learning_rate": 0.0001,
+      "num_sequences": 990,
+      "train_size": 792,
+      "test_size": 198,
+      "mse_scaled": 0.004948161542415619,
+      "mae_scaled": 0.05269526317715645,
+      "mae_original": 13.331903457641602
+    },
+    {
+      "seq_length": 10,
+      "learning_rate": 0.0005,
+      "num_sequences": 990,
+      "train_size": 792,
+      "test_size": 198,
+      "mse_scaled": 0.0004935677861794829,
+      "mae_scaled": 0.01757943257689476,
+      "mae_original": 4.447596549987793
+    },
+    {
+      "seq_length": 10,
+      "learning_rate": 0.001,
+      "num_sequences": 990,
+      "train_size": 792,
+      "test_size": 198,
+      "mse_scaled": 0.00039488731999881566,
+      "mae_scaled": 0.016045378521084785,
+      "mae_original": 4.059481143951416
+    },
+    {
+      "seq_length": 10,
+      "learning_rate": 0.005,
+      "num_sequences": 990,
+      "train_size": 792,
+      "test_size": 198,
+      "mse_scaled": 7.157117943279445e-05,
+      "mae_scaled": 0.007543953601270914,
+      "mae_original": 1.9086202383041382
+    },
+    {
+      "seq_length": 15,
+      "learning_rate": 0.0001,
+      "num_sequences": 985,
+      "train_size": 788,
+      "test_size": 197,
+      "mse_scaled": 0.00437655346468091,
+      "mae_scaled": 0.05215964466333389,
+      "mae_original": 13.196388244628906
+    },
+    {
+      "seq_length": 15,
+      "learning_rate": 0.0005,
+      "num_sequences": 985,
+      "train_size": 788,
+      "test_size": 197,
+      "mse_scaled": 0.0006617322214879096,
+      "mae_scaled": 0.018395353108644485,
+      "mae_original": 4.654024124145508
+    },
+    {
+      "seq_length": 15,
+      "learning_rate": 0.001,
+      "num_sequences": 985,
+      "train_size": 788,
+      "test_size": 197,
+      "mse_scaled": 0.0008636353886686265,
+      "mae_scaled": 0.01904420182108879,
+      "mae_original": 4.818182945251465
+    },
+    {
+      "seq_length": 15,
+      "learning_rate": 0.005,
+      "num_sequences": 985,
+      "train_size": 788,
+      "test_size": 197,
+      "mse_scaled": 8.869315206538886e-05,
+      "mae_scaled": 0.007513795979321003,
+      "mae_original": 1.900990605354309
+    },
+    {
+      "seq_length": 20,
+      "learning_rate": 0.0001,
+      "num_sequences": 980,
+      "train_size": 784,
+      "test_size": 196,
+      "mse_scaled": 0.025891592726111412,
+      "mae_scaled": 0.14054544270038605,
+      "mae_original": 35.5579948425293
+    },
+    {
+      "seq_length": 20,
+      "learning_rate": 0.0005,
+      "num_sequences": 980,
+      "train_size": 784,
+      "test_size": 196,
+      "mse_scaled": 0.001046854304149747,
+      "mae_scaled": 0.024677928537130356,
+      "mae_original": 6.243516445159912
+    },
+    {
+      "seq_length": 20,
+      "learning_rate": 0.001,
+      "num_sequences": 980,
+      "train_size": 784,
+      "test_size": 196,
+      "mse_scaled": 0.00012462456652428955,
+      "mae_scaled": 0.008811111561954021,
+      "mae_original": 2.2292115688323975
+    },
+    {
+      "seq_length": 20,
+      "learning_rate": 0.005,
+      "num_sequences": 980,
+      "train_size": 784,
+      "test_size": 196,
+      "mse_scaled": 0.00015300927043426782,
+      "mae_scaled": 0.008895477280020714,
+      "mae_original": 2.2505555152893066
+    },
+    {
+      "seq_length": 25,
+      "learning_rate": 0.0001,
+      "num_sequences": 975,
+      "train_size": 780,
+      "test_size": 195,
+      "mse_scaled": 0.017193874344229698,
+      "mae_scaled": 0.109117791056633,
+      "mae_original": 27.60679817199707
+    },
+    {
+      "seq_length": 25,
+      "learning_rate": 0.0005,
+      "num_sequences": 975,
+      "train_size": 780,
+      "test_size": 195,
+      "mse_scaled": 0.0006564368959516287,
+      "mae_scaled": 0.021836530417203903,
+      "mae_original": 5.524641990661621
+    },
+    {
+      "seq_length": 25,
+      "learning_rate": 0.001,
+      "num_sequences": 975,
+      "train_size": 780,
+      "test_size": 195,
+      "mse_scaled": 0.00021541495516430587,
+      "mae_scaled": 0.010230139829218388,
+      "mae_original": 2.5882251262664795
+    },
+    {
+      "seq_length": 25,
+      "learning_rate": 0.005,
+      "num_sequences": 975,
+      "train_size": 780,
+      "test_size": 195,
+      "mse_scaled": 8.588148921262473e-05,
+      "mae_scaled": 0.006946322973817587,
+      "mae_original": 1.7574199438095093
+    }
+  ],
+  "best_result": {
+    "seq_length": 10,
+    "learning_rate": 0.005,
+    "num_sequences": 990,
+    "train_size": 792,
+    "test_size": 198,
+    "mse_scaled": 7.157117943279445e-05,
+    "mae_scaled": 0.007543953601270914,
+    "mae_original": 1.9086202383041382
+  }
+}
