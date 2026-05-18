@@ -9,7 +9,7 @@ Follow this exact workflow when you connect to your RunPod instance:
 ### Step 1: Train your Intra Model
 Run the training script pointing to the Intra train folder. 
 ```bash
-python train.py --train-path "/workspace/UU_Deep_Learning/Final Project data/Intra/train" --epochs 30
+python train.py --train-path "/workspace/UU_Deep_Learning/Assignment2/Final Project data/Intra/train" --epochs 30
 ```
 *After this finishes, it will save the model as `eegnet_trained.pth`. Rename it so you don't accidentally overwrite it during cross-subject training!*
 ```bash
@@ -19,13 +19,14 @@ mv eegnet_trained.pth intra_model.pth
 ### Step 2: Evaluate your Intra Model
 Use the evaluation script to calculate detailed metrics (Accuracy, Precision, Recall, F1) on the Intra test dataset.
 ```bash
-python evaluate.py --model-path "intra_model.pth" --test-path "/workspace/UU_Deep_Learning/Final Project data/Intra/test"
+python evaluate.py --model-path "intra_model.pth" --test-path "/workspace/UU_Deep_Learning/Assignment2/Final Project data/Intra/test"
 ```
+*This will generate `intra_model_confusion_matrix.png` and export all raw results to `intra_model_evaluation_results.json`.*
 
 ### Step 3: Train your Cross Model
 Now, train a new model on the Cross-subject data.
 ```bash
-python train.py --train-path "/workspace/UU_Deep_Learning/Final Project data/Cross/train" --epochs 30
+python train.py --train-path "/workspace/UU_Deep_Learning/Assignment2/Final Project data/Cross/train" --epochs 30
 ```
 *Rename the output file again:*
 ```bash
@@ -33,9 +34,9 @@ mv eegnet_trained.pth cross_model.pth
 ```
 
 ### Step 4: Evaluate your Cross Model (on unseen subjects)
-You can evaluate this model on the unseen subjects in `test1`, `test2`, or `test3`.
+The evaluation script will now automatically detect and evaluate the model across all unseen subject test folders (`test1`, `test2`, and `test3`).
 ```bash
-python evaluate.py --model-path "cross_model.pth" --test-path "/workspace/UU_Deep_Learning/Final Project data/Cross/test1"
+python evaluate.py --model-path "cross_model.pth" --test-path "/workspace/UU_Deep_Learning/Assignment2/Final Project data/Cross/test1"
 ```
 
-*This script will print out a detailed table showing exactly how well the model predicted Rest vs Math vs Memory vs Motor tasks, providing all the metrics you need for your final report!*
+*This script will print out detailed tables for each subject, save individual confusion matrix plots (`cross_model_test1_confusion_matrix.png`, etc.), and export all raw predictions, labels, and metrics into a comprehensive JSON file (`cross_model_evaluation_results.json`) for your final report!*
