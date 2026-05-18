@@ -2,7 +2,10 @@ import argparse
 import torch
 import numpy as np
 from torch.utils.data import DataLoader
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
 from dataset import MEGDataset
 from eegnet import EEGNet
 
@@ -50,7 +53,22 @@ def main():
     print(f"Recall:    {recall:.4f}")
     print(f"F1-Score:  {f1:.4f}")
     print("\nDetailed Classification Report:")
-    print(classification_report(all_labels, all_preds, target_names=["Rest (0)", "Math (1)", "Memory (2)", "Motor (3)"], zero_division=0))
+    target_names = ["Rest (0)", "Math (1)", "Memory (2)", "Motor (3)"]
+    print(classification_report(all_labels, all_preds, target_names=target_names, zero_division=0))
+
+    # Generate and save Confusion Matrix plot
+    cm = confusion_matrix(all_labels, all_preds)
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=target_names, yticklabels=target_names)
+    plt.ylabel('Actual Label')
+    plt.xlabel('Predicted Label')
+    plt.title('Confusion Matrix')
+    
+    # Save the plot based on the model name
+    model_name = os.path.basename(args.model_path).replace('.pth', '')
+    plot_filename = f"{model_name}_confusion_matrix.png"
+    plt.savefig(plot_filename, dpi=300, bbox_inches='tight')
+    print(f"\n📊 Confusion matrix plot saved as: {plot_filename}")
 
 if __name__ == '__main__':
     main()

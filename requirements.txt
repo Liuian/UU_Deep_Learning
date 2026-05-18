@@ -3,3 +3,5 @@ numpy
 h5py
 scikit-learn
 tqdm
+matplotlib
+seaborn
