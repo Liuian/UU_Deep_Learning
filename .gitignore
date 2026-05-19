@@ -3,7 +3,8 @@ Assignment2/Final Project data/
 _pycache_
 test/
 Final Project data/
-venv/ 
+venv/
+Assignment2/venv/
 *.pyc
 *.DS_Store
 Final Project data.zip
